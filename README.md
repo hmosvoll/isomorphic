@@ -1,2 +1,2 @@
-# isomorphic
-Isomorphic JavaScript test with TodoMVC template
+# Isomorphic
+Isomorphic JavaScript test

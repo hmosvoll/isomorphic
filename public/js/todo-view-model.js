@@ -6,9 +6,8 @@ export default (global) => {
             
             todos.forEach((todo) => {
                 const listItemTemplateClone = listItemTemplate.content.cloneNode(true);
-                console.log(JSON.stringify(listItemTemplateClone));
-                //const listItemElement = listItemTemplateClone.querySelector("#todo-item");
-                listItemTemplateClone.textContent = todo;
+                const listItemElement = listItemTemplateClone.querySelector("#todo-item");
+                listItemElement.textContent = todo;
                 listElement.appendChild(listItemTemplateClone);
             });
         } 

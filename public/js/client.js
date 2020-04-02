@@ -1,5 +1,5 @@
 import TodoViewModel from './todo-view-model.js';
+import TodoDataClient from './todo-data-client.js';
 
-const todoViewModel = new TodoViewModel(window, true);
-
-console.log(todoViewModel);
+const todoDataClient = new TodoDataClient();
+var Todo = new TodoViewModel(window, true, todoDataClient);
